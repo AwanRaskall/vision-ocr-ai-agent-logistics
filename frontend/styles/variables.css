@@ -1,0 +1,10 @@
+:root {
+    /* Background colors */
+    --color-background-sidebar: #33221F; /* Chocolate */
+    --color-background-page: #9887B8; /* Blueberry */   
+    --color-background-surface: #F4EFE8; /* Coconut */
+
+    /* Text colors */
+    --color-text-dark: #211918;
+    --color-text-light: #FFF9F2; /* Ivory */
+}
