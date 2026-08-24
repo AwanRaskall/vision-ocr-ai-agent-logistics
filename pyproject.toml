@@ -1,0 +1,29 @@
+[project]
+name = "photo-document-extractor-ai"
+version = "0.1.0"
+description = "AI-powered logistics platform that extracts CMR data using computer vision and LLMs and uses an AI agent to find suitable transportation options."
+authors = [{name = "Anastasiia",email = "bakhmutovaaa@gmail.com"}]
+readme = "README.md"
+
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+
+# dependencies
+requires-python = "3.12.6"
+dependencies = [
+    "fastapi (==0.141.1)"
+]
+
+# Usefull for PyPI research
+keywords = ["logistics", "tms", "computer-vision", "ocr", "ai", "llm", "ai-agent", "cmr", "transportation", "fastapi", "react"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/AwanRaskall/vision-ocr-ai-agent-logistics"
+Repository = "https://github.com/AwanRaskall/vision-ocr-ai-agent-logistics"
+
+[tool.poetry]
+packages = [{ include = "app", from = "backend" }]
