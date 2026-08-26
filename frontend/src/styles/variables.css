@@ -4,7 +4,8 @@
     --color-background-page: #9887B8; /* Blueberry */   
     --color-background-surface: #F4EFE8; /* Coconut */
 
-    /* Text colors */
+    /* Text*/
     --color-text-dark: #211918;
     --color-text-light: #FFF9F2; /* Ivory */
+    --font-main: "Libre Baskerville", serif;
 }
