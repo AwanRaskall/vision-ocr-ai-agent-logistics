@@ -1,0 +1,42 @@
+.hero {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.hero__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.hero__intro {
+  margin-top: 10vh;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.hero__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+}
+
+.hero__description {
+  margin-top: 1rem;
+}
