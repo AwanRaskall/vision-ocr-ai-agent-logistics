@@ -10,4 +10,8 @@
     --color-text-light: #FFF9F2; /* Ivory */
     --font-main: "Libre Baskerville", serif;
     --font-size-base: 1rem;
+
+    /* Layout */
+    --navigation-home-height: 4rem;
+
 }
