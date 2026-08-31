@@ -1,5 +1,6 @@
 :root {
     /* Background colors */
+    --color-background-hero: #33221F;
     --color-background-sidebar: #33221F; /* Chocolate */
     --color-background-page: #9887B8; /* Blueberry */   
     --color-background-surface: #F4EFE8; /* Coconut */
@@ -8,4 +9,5 @@
     --color-text-dark: #211918;
     --color-text-light: #FFF9F2; /* Ivory */
     --font-main: "Libre Baskerville", serif;
+    --font-size-base: 1rem;
 }
