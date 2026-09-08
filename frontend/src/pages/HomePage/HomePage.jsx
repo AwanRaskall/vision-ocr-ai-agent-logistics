@@ -19,14 +19,14 @@ function HomePage() {
 
         <nav className='hero__nav-links'>
           <a href='#platform_info'> About the platform </a>
-          <a href='#skills_used'> Skills used</a>
-          <a href='#features'> Features</a>
+          <a href='#tech_stack'> Tech_stack </a>
+          <a href='#features'> Features </a>
           <a href='#order_ext_module'> Order extraction module </a>
         </nav>
       </header>
 
 
-      {/* Hero screen */}
+      {/* Section 1 - Hero */}
       <section className='hero container'>
         <div className='hero__intro'>
           <h1> Intelligent Transport Document Processing with AI </h1>
@@ -66,6 +66,7 @@ function HomePage() {
       </section>
 
 
+      {/* Section 2 - About the platform */}
       <section id='platform_info' className='platform_info'>
         <div className='platform_info__container container'>
 
@@ -128,8 +129,32 @@ function HomePage() {
       </section>
 
 
-      <section id='skills_used' className='skills_used container'>
-        {/* Information about the platform */}
+      {/* Section 3 - Tech stack */}
+      <section id='tech_stack' className='tech_stack'>
+        <div className = 'tech_stack__container container'>
+          <h2> Tech Stack </h2>
+          <div className='tech_stack__list'>
+            <p>AI</p> 
+            <p> · </p>
+            <p>Computer Vision</p>
+            <p> · </p>
+            <p>OCR</p>
+            <p> · </p>
+            <p>LLM</p>
+            <p> · </p>
+            <p>PyTorch</p> 
+            <p> · </p>
+            <p>LangChain</p> 
+            <p> · </p>
+            <p>React</p>
+            <p> · </p>
+            <p>Python</p>
+            <p> · </p>
+            <p>FastAPI </p> 
+            <p> · </p>
+            <p>PostgreSQL</p>
+          </div>
+        </div>
       </section>
 
       <section id='features' className='features container'>
