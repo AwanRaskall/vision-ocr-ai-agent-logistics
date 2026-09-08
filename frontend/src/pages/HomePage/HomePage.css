@@ -4,13 +4,6 @@ main {
     padding-top: 1rem;
 }
 
-.hero-screen {
-    height: calc(100vh - var(--navigation-home-height) - 1rem);
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-background-hero);
-}
-
 .hero__nav {
     position: sticky;
     top: 1rem;
@@ -34,7 +27,7 @@ main {
     gap: 0.5rem;
     padding-right: clamp(1rem, 2vw, 2rem);
     border-right: 1px solid var(--color-background-hero);
-    color: var(--color-background-hero);
+    color: var(--color-logo);
     text-decoration: none;
 }
 
@@ -87,6 +80,7 @@ main {
     min-height: 0;
     display: flex;
     flex-direction: column;
+    height: calc(100vh - var(--navigation-home-height) - 1rem);
     padding-block: clamp(1rem, 1.5vw, 1.5rem);
     background-color: var(--color-background-hero);
 }
@@ -184,10 +178,77 @@ main {
 }
 
 
-.platform,
-.features {
-    width: 100%;
-    min-height: 50vh;
-    padding-block: clamp(4rem, 8vw, 8rem);
+/* Section - about the platform */
+
+.platform_info {
+    padding-block: clamp(1rem, 1.5vw, 1.5rem);
     background-color: var(--color-background-page);
+}
+
+.platform_info__container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: clamp(1.5rem, 3vw, 3rem);
+    align-items: stretch;
+}
+
+.platform_info__image {
+    overflow: hidden;
+}
+
+.platform_info__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.platform_info__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: clamp(0.5rem, 1vw, 1rem);
+    gap: clamp(1rem, 2vw, 2rem);
+}
+
+.platform_info__item {
+    margin: 0;
+}
+
+.platform_info__heading {
+    display: flex;
+    align-items: baseline;
+    gap: clamp(0.75rem, 1.5vw, 1.5rem);
+}
+
+.platform_info__content h2 {
+    margin: 0;
+    color: var(--color-text-dark);
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.platform_info__number,
+.platform_info__item h3 {
+    color: var(--color-text-dark);
+    font-size: clamp(1.25rem, 1.8vw, 2rem);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.platform_info__number {
+    flex-shrink: 0;
+}
+
+.platform_info__item h3 {
+    margin: 0;
+}
+
+.platform_info__item p {
+    margin: clamp(0.75rem, 1vw, 1rem) 0 0;
+    color: var(--color-text-dark);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
 }
