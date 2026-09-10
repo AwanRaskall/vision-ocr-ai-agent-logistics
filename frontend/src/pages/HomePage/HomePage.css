@@ -289,3 +289,109 @@ h3 {
 .tech_stack__list p {
     margin: 0;
 }
+
+
+/* Section 4 - Features */
+.features {
+    background-color: var(--color-background-page);
+}
+
+.features__container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: clamp(1.5rem, 3vw, 3rem);
+}
+
+.features__title {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.features__title span {
+    font-size: 0.8em;
+}
+
+
+.features__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1rem, 2vw, 2rem);
+}
+
+.features__item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+}
+
+.features__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: clamp(1rem, 1.5vw, 1.5rem);
+    padding-block: clamp(1.5rem, 2.5vw, 2.5rem);
+    padding-inline: clamp(0.5rem, 1vw, 1rem);
+    text-align: center;
+}
+
+.features__content h3 {
+    margin: 0;
+}
+
+.features__item p {
+    margin: 0;
+    color: var(--color-text-dark);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+}
+
+.features__item--dark h3,
+.features__item--dark p {
+    color: var(--color-text-light);
+}
+
+
+.features__image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+}
+
+.features__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.features__item--light .features__content {
+    background-color: var(--color-background-surface);
+}
+
+.features__item--dark .features__content {
+    background-color: var(--color-background-hero);
+}
+
+.features__item--light .features__image {
+    margin-bottom: clamp(1rem, 1.7vw, 1.6rem);
+    background: linear-gradient(
+        to bottom,
+        var(--color-background-surface) 0 50%,
+        var(--color-background-page) 50% 100%
+    );
+}
+
+.features__item--dark .features__image {
+    margin-top: clamp(1rem, 1.7vw, 1.6rem);
+    background: linear-gradient(
+        to bottom,
+        var(--color-background-page) 0 50%,
+        var(--color-background-hero) 50% 100%
+    );
+}
