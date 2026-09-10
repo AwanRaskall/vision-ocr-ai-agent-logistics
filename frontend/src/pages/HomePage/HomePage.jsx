@@ -1,6 +1,10 @@
 import './HomePage.css'
 import heroImage from '../../assets/image_hero.jpg'
 import platformInfoImage from '../../assets/platform_info.jpg'
+import featureOcrImage from '../../assets/feature_ocr.jpg'
+import featureAgentImage from '../../assets/feature_agent.jpg'
+import featureDatabaseImage from '../../assets/feature_database.jpg'
+import featureConfigurationImage from '../../assets/feature_configuration.jpg'
 
 function HomePage() {
   return (
@@ -157,9 +161,95 @@ function HomePage() {
         </div>
       </section>
 
-      <section id='features' className='features container'>
-        {/* Platform features */}
+      {/* Section 4 - Features */}
+      <section id='features' className='features'>
+        <div className='features__container container'>
+          <h2 className='features__title'>
+              <span>Project</span>
+              FEATURES
+          </h2>
+
+          <div className='features__list'>
+            <div className='features__item features__item--light'>
+              <div className='features__content'>
+                <h3>
+                  OCR & Document Processing
+                </h3>
+
+                <p>
+                  Transport documents are processed using computer vision
+                  and OCR. PyTorch-based models analyse document images
+                  and extract the information required for further
+                  logistics processing
+                </p>
+              </div>
+
+              <div className='features__image'>
+                <img src={featureOcrImage} alt='OCR and document processing' />
+              </div>
+            </div>
+
+            <div className='features__item features__item--dark'>
+              <div className='features__image'>
+                <img src={featureAgentImage} alt='AI agent for transport search' />
+              </div>
+
+              <div className='features__content'>
+                <h3>
+                  AI Agent for Transport Search
+                </h3>
+
+                <p>
+                  An AI agent uses the extracted document information
+                  to identify suitable transports in the database.
+                  LangChain helps coordinate the agent workflow and
+                  interaction with the available data.
+                </p>
+              </div>
+            </div>
+
+            <div className='features__item features__item--light'>
+              <div className='features__content'>
+                <h3>
+                  Structured Data & Database
+                </h3>
+
+                <p>
+                  Information extracted from transport documents is
+                  transformed into structured data and stored in
+                  PostgreSQL, making processed information available
+                  for further logistics operations.
+                </p>
+              </div>
+
+              <div className='features__image'>
+                  <img src={featureDatabaseImage} alt='Structured data and database' />
+              </div>
+            </div>
+
+            <div className='features__item features__item--dark'>
+              <div className='features__image'>
+                <img src={featureConfigurationImage} alt='Configurable processing pipeline' />
+              </div>
+
+              <div className='features__content'>
+                <h3>
+                  Configurable Processing Pipeline
+                </h3>
+
+                <p>
+                  The processing pipeline can be configured for different
+                  document types and logistics scenarios, allowing the
+                  system to adapt its processing workflow to specific
+                  requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+
 
       <section id='order_ext_module' className='order_ext_module container'>
         {/* Platform features */}
